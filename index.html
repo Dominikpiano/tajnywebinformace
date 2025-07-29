@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokladová brána</title>
+  <style>
+    body {
+      font-family: monospace;
+      background: #111;
+      color: #0f0;
+      text-align: center;
+      padding-top: 100px;
+    }
+    #tajemstvi {
+      display: none;
+      margin-top: 40px;
+    }
+    input {
+      padding: 5px;
+      font-size: 1em;
+    }
+    button {
+      padding: 5px 10px;
+      font-size: 1em;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚂 Vstup pouze pro zasvěcené</h1>
+  <p>Zadej přístupový kód:</p>
+  <input type="password" id="pass" placeholder="">
+  <button onclick="checkPass()">Odemkni</button>
+
+  <div id="tajemstvi">
+    <h2>🔓 Přístup povolen!</h2>
+    <p>Další krok: Nastup do <strong>vlaku 8033</strong> a jeď směrem k Olbramovicím.</p>
+    <p>Na zastávce hledej <em>modrý kámen</em> – pod ním je souřadnice.</p>
+  </div>
+
+  <script>
+    function checkPass() {
+      const zadane = document.getElementById("pass").value;
+      const spravne = "vlak123";
+      if (zadane === spravne) {
+        document.getElementById("tajemstvi").style.display = "block";
+      } else {
+        alert("❌ Neplatný kód. Zkus to znovu.");
+      }
+    }
+  </script>
+</body>
+</html>
