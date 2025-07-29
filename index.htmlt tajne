@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Tajný Web</title>
+  <style>
+    body {
+      background-color: black;
+      color: limegreen;
+      font-family: monospace;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 32px;
+    }
+    .code-box {
+      margin-top: 30px;
+      padding: 20px;
+      border: 2px dashed limegreen;
+      display: inline-block;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <h1>VÍTEJTE NA OFICIÁLNÍM<br>TAJNÝM WEBU NEPŘÍSTUPNÝCH INFORMACÍ</h1>
+  
+  <div class="code-box">
+    Kód: <strong>Operace2025dolary</strong>
+  </div>
+</body>
+</html>
